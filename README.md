@@ -11,37 +11,37 @@
   - 자바 Syncronized : 하나의 프로세스, 하나의 서버 내에서는 괜찮지만 여러 서버에서 접근한다면 문제해결 어려움
   - mysql lock : 데이터에 락을 걸어 정합성을 맞추는 방법, 데드락 가능성 O
   
-## Project Structure
-        📦src
-        ┣ 📂main
-        ┃ ┣ 📂java
-        ┃ ┃ ┗ 📂com
-        ┃ ┃ ┃ ┗ 📂example
-        ┃ ┃ ┃ ┃ ┗ 📂concurrency
-        ┃ ┃ ┃ ┃ ┃ ┣ 📂domain
-        ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Article.java
-        ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Author.java
-        ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Image.java
-        ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜Status.java
-        ┃ ┃ ┃ ┃ ┃ ┣ 📂facade
-        ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜OptimisticLockFacade.java
-        ┃ ┃ ┃ ┃ ┃ ┣ 📂repository
-        ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ArticleRepository.java
-        ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜AuthorRepository.java
-        ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜ImageRepository.java
-        ┃ ┃ ┃ ┃ ┃ ┣ 📂service
-        ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ArticleService.java
-        ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜OptimisticLockService.java
-        ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜UserService.java
-        ┃ ┃ ┃ ┃ ┃ ┗ NewsArticlelication.java
-        ┃ ┗ 📂resources
-        ┃ ┃ ┣ 📜application.yml
-        ┃ ┃ ┗ 📜log4jdbc.log4j2.properties
-        ┗ 📂test
-        ┃ ┗ 📂java
-        ┃ ┃ ┗ 📂com
-        ┃ ┃ ┃ ┗ 📂example
-        ┃ ┃ ┃ ┃ ┗ 📂concurrency
-        ┃ ┃ ┃ ┃ ┃ ┣ 📂service
-        ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜ArticleServiceTest.java
-        ┃ ┃ ┃ ┃ ┃ ┗ NewsArticlelication.java
+### Project Structure
+    📦src
+    ┣ 📂main
+    ┃ ┣ 📂java
+    ┃ ┃ ┗ 📂com
+    ┃ ┃ ┃ ┗ 📂example
+    ┃ ┃ ┃ ┃ ┗ 📂concurrency
+    ┃ ┃ ┃ ┃ ┃ ┣ 📂domain
+    ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Article.java
+    ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Author.java
+    ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Image.java
+    ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜Status.java
+    ┃ ┃ ┃ ┃ ┃ ┣ 📂facade
+    ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜OptimisticLockFacade.java
+    ┃ ┃ ┃ ┃ ┃ ┣ 📂repository
+    ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ArticleRepository.java
+    ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜AuthorRepository.java
+    ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜ImageRepository.java
+    ┃ ┃ ┃ ┃ ┃ ┣ 📂service
+    ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ArticleService.java
+    ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜OptimisticLockService.java
+    ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜UserService.java
+    ┃ ┃ ┃ ┃ ┃ ┗ NewsArticlelication.java
+    ┃ ┗ 📂resources
+    ┃ ┃ ┣ 📜application.yml
+    ┃ ┃ ┗ 📜log4jdbc.log4j2.properties
+    ┗ 📂test
+    ┃ ┗ 📂java
+    ┃ ┃ ┗ 📂com
+    ┃ ┃ ┃ ┗ 📂example
+    ┃ ┃ ┃ ┃ ┗ 📂concurrency
+    ┃ ┃ ┃ ┃ ┃ ┣ 📂service
+    ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜ArticleServiceTest.java
+    ┃ ┃ ┃ ┃ ┃ ┗ NewsArticlelication.java
